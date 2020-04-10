@@ -1,6 +1,6 @@
 {
   "name": "@feizheng/react-ant-filter-dropdown-checkbox",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Filter dropdown for checkbox.",
   "main": "dist/index.js",
   "scripts": {

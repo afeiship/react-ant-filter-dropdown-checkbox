@@ -15,7 +15,7 @@ npm update @feizheng/react-ant-filter-dropdown-checkbox
 | Name          | Type   | Required | Default | Description                           |
 | ------------- | ------ | -------- | ------- | ------------------------------------- |
 | className     | string | false    | -       | The extended className for component. |
-| value         | array  | false    | []      | Default value.                        |
+| value         | array  | false    | -       | Default value.                        |
 | items         | array  | false    | []      | The dropdown menu items.              |
 | selectAllText | any    | false    | '全选'  | Select all text.                      |
 | onChange      | func   | false    | noop    | The change handler.                   |
@@ -50,7 +50,6 @@ npm update @feizheng/react-ant-filter-dropdown-checkbox
         <div className="app-container">
           <ReactAntFilterDropdownCheckbox
             items={items}
-            value={value}
             onChange={(e) => {
               this.setState({ value: e.target.value });
             }}

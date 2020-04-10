@@ -37,7 +37,6 @@ export default class ReactAntFilterDropdownCheckbox extends Component {
   };
 
   static defaultProps = {
-    value: [],
     items: [],
     selectAllText: '全选',
     onChange: noop
@@ -48,7 +47,7 @@ export default class ReactAntFilterDropdownCheckbox extends Component {
     const { value } = inProps;
     this.state = {
       visible: false,
-      value
+      value: value || []
     };
   }
 
@@ -104,7 +103,7 @@ export default class ReactAntFilterDropdownCheckbox extends Component {
 
   shouldComponentUpdate(inProps) {
     const { value } = inProps;
-    if (value !== this.state.value) {
+    if (value && value !== this.state.value) {
       this.setState({ value });
     }
     return true;

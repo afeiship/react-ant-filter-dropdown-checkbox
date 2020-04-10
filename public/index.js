@@ -17,7 +17,6 @@ class App extends React.Component {
       <div className="app-container">
         <ReactAntFilterDropdownCheckbox
           items={items}
-          value={value}
           onChange={(e) => {
             this.setState({ value: e.target.value });
           }}
