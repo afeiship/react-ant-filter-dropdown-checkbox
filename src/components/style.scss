@@ -1,0 +1,17 @@
+$react-ant-filter-dropdown-checkbox-options: () !default;
+
+.react-ant-filter-dropdown-checkbox {
+  $root: &;
+  &__icon {
+    transition: all 0.3s;
+  }
+
+  &__body {
+    user-select: none;
+    &[data-visible="true"] {
+      #{$root}__icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
