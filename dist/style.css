@@ -1,0 +1,7 @@
+.react-ant-filter-dropdown-checkbox__icon {
+  transition: all 0.3s; }
+
+.react-ant-filter-dropdown-checkbox__body {
+  user-select: none; }
+  .react-ant-filter-dropdown-checkbox__body[data-visible="true"] .react-ant-filter-dropdown-checkbox__icon {
+    transform: rotate(180deg); }

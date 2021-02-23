@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-import noop from '@feizheng/noop';
-import objectAssign from 'object-assign';
+import noop from '@jswork/noop';
 import { Dropdown, Checkbox, Menu } from 'antd';
 import { DownOutlined } from '@ant-design/icons';
-import nxToggle from '@feizheng/next-toggle';
+import nxToggle from '@jswork/next-toggle';
 
 const CLASS_NAME = 'react-ant-filter-dropdown-checkbox';
 
